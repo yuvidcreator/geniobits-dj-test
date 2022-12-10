@@ -1,0 +1,47 @@
+<!doctype html>{% load static %}
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!--Custom css ADD HERE-->
+
+    <!-- semantic UI -->
+    <link rel="stylesheet" type='text/css'
+        href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/semantic.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+
+    <title>Trading Project - {% block title %}{% endblock title %}</title>
+
+    <style>
+        .ui.container {
+            margin-top: 12rem !important;
+            margin-left: 32rem !important;
+            margin-right: 32rem !important;
+        }
+        .ui.button.primary {
+            margin-top: 1rem !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="ui container">
+        {% block content %}
+        {% endblock content %}
+
+        <div class="ui hidden divider"></div>
+        <div class="ui divider"></div>
+        <footer>
+            <div class="ui footer center">
+                &copy; 2022 <a href="https://www.linkedin.com/in/yuvrajlimbole/">Yuvraaj Limbole</a>.
+            </div>
+        </footer>
+    </div>
+
+    <!--Custom js ADD HERE-->
+    {% block scripts %}
+    {% endblock scripts %}
+</body>
+</html>

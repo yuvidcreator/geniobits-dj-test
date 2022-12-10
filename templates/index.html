@@ -1,0 +1,23 @@
+{% extends "./base.html" %}
+{% load static %}
+{% block title %}BookStore{% endblock %}
+
+{% block content %}
+<div>
+    <h3>Upload CSV File</h3>
+    <form action="" method="POST" class="ui form" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{form}}
+        <button class="ui button primary">Upload</button>
+    </form>
+
+
+    {% if download_file %}
+        Get/Download JSON file at Root Directory of Django Project: dummy.json
+    {% endif %}
+    
+</div>
+{% endblock content %}
+
+{% block scripts %}
+{% endblock scripts %}
